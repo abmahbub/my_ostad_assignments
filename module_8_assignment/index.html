@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript DOM Assignments</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; max-width: 800px; margin: 0 auto; }
+    .task { border: 1px solid #ddd; border-radius: 6px; padding: 15px; margin-bottom: 20px; background-color: #fcfcfc; }
+    button { padding: 6px 14px; margin: 5px 2px; cursor: pointer; border-radius: 4px; border: 1px solid #ccc; background: #eee; }
+    button:hover { background: #e0e0e0; }
+    input { padding: 6px 10px; margin: 5px 2px; border: 1px solid #ccc; border-radius: 4px; }
+    .box { width: 100%; height: 60px; background-color: lightgray; display: flex; align-items: center; justify-content: center; margin: 8px 0; border-radius: 4px; }
+    img { border-radius: 6px; display: block; margin-top: 8px; }
+    ul { margin-top: 8px; padding-left: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: Change Text -->
+  <div class="task">
+    <h1 id="task1-heading">Original Heading</h1>
+    <button id="task1-btn">Change Heading</button>
+  </div>
+
+  <!-- Task 2: Change Paragraph -->
+  <div class="task">
+    <p id="task2-para">I am learning JavaScript.</p>
+    <button id="task2-btn">Change Text</button>
+  </div>
+
+  <!-- Task 3: Show & Hide -->
+  <div class="task">
+    <p id="task3-para">This is a toggleable paragraph.</p>
+    <button id="task3-show-btn">Show</button>
+    <button id="task3-hide-btn">Hide</button>
+  </div>
+
+  <!-- Task 4: Change Background Color -->
+  <div class="task">
+    <div id="task4-box" class="box">Box Area</div>
+    <button id="task4-btn">Change Color</button>
+  </div>
+
+  <!-- Task 5: Increase Number -->
+  <div class="task">
+    <p>Number: <span id="task5-num">0</span></p>
+    <button id="task5-btn">Increase</button>
+  </div>
+
+  <!-- Task 6: Decrease Number -->
+  <div class="task">
+    <p>Number: <span id="task6-num">10</span></p>
+    <button id="task6-btn">Decrease</button>
+  </div>
+
+  <!-- Task 7: Counter -->
+  <div class="task">
+    <p>Counter: <span id="task7-counter">0</span></p>
+    <button id="task7-inc-btn">Increase</button>
+    <button id="task7-dec-btn">Decrease</button>
+    <button id="task7-reset-btn">Reset</button>
+  </div>
+
+  <!-- Task 8: Input Value Show -->
+  <div class="task">
+    <input type="text" id="task8-input" placeholder="Enter your name" />
+    <button id="task8-btn">Show Name</button>
+    <p id="task8-output"></p>
+  </div>
+
+  <!-- Task 9: Change Image -->
+  <div class="task">
+    <img id="task9-img" src="https://picsum.photos/id/10/200/120" alt="Sample" width="200" height="120" />
+    <button id="task9-btn">Change Image</button>
+  </div>
+
+  <!-- Task 10: Change Text Color -->
+  <div class="task">
+    <p id="task10-para">This text will change its color.</p>
+    <button id="task10-btn">Change Text Color</button>
+  </div>
+
+  <!-- Task 11: Simple Login Check -->
+  <div class="task">
+    <input type="text" id="task11-user" placeholder="Username" />
+    <input type="password" id="task11-pass" placeholder="Password" />
+    <button id="task11-btn">Login</button>
+    <p id="task11-msg"></p>
+  </div>
+
+  <!-- Task 12: Age Check -->
+  <div class="task">
+    <input type="number" id="task12-age" placeholder="Enter your age" />
+    <button id="task12-btn">Check Eligibility</button>
+    <p id="task12-msg"></p>
+  </div>
+
+  <!-- Task 13: Add Two Numbers -->
+  <div class="task">
+    <input type="number" id="task13-num1" placeholder="Number 1" />
+    <input type="number" id="task13-num2" placeholder="Number 2" />
+    <button id="task13-btn">Add</button>
+    <p id="task13-result"></p>
+  </div>
+
+  <!-- Task 14: Even or Odd -->
+  <div class="task">
+    <input type="number" id="task14-input" placeholder="Enter a number" />
+    <button id="task14-btn">Check Even/Odd</button>
+    <p id="task14-result"></p>
+  </div>
+
+  <!-- Task 15: Simple To-Do List -->
+  <div class="task">
+    <input type="text" id="task15-input" placeholder="Enter a task" />
+    <button id="task15-btn">Add Task</button>
+    <ul id="task15-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
